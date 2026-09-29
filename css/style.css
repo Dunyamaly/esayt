@@ -2019,10 +2019,6 @@ html[data-theme='dark'] .pricing-card::after {
     width: min(100% - 40px, 1160px);
   }
 
-  .pricing .container {
-    width: min(100% - 150px, 1160px);
-  }
-
   section {
     padding: 75px 0;
   }
@@ -2152,7 +2148,8 @@ html[data-theme='dark'] .pricing-card::after {
   /* HERO */
 
   .hero {
-    padding: 75px 0 80px;
+    padding: 40px 0 30px;
+    background: red;
   }
 
   .hero__inner {
@@ -2183,6 +2180,10 @@ html[data-theme='dark'] .pricing-card::after {
 
   .hero__actions .btn {
     width: 100%;
+  }
+
+  .hero__visual {
+    min-height: 0px;
   }
 
   /* HEADINGS */
