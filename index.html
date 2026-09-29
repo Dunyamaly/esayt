@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Biznesiniz üçün müasir, mobil uyğun veb saytların hazırlanması, e-ticarət həlləri və davamlı texniki dəstək xidməti."
+    />
+
+    <title>Sayt sifarişi: biznes üçün veb sayt hazırlanması | esayt.az</title>
+
+    <!-- Səhifə yüklənən kimi düzgün rejimi tətbiq et (flash olmasın deyə) -->
+    <script>
+      ;(function () {
+        try {
+          var saved = localStorage.getItem('theme')
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          var theme = saved || (prefersDark ? 'dark' : 'light')
+          document.documentElement.setAttribute('data-theme', theme)
+        } catch (e) {}
+      })()
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="lg-m">
+          <button
+            type="button"
+            class="nav-burger"
+            id="navBurger"
+            aria-label="Menyunu aç/bağla"
+            aria-expanded="false"
+            aria-controls="navList"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <a href="#main" class="logo"> <i class="fa-solid fa-circle-nodes"></i> esayt.az</a>
+        </div>
+
+        <ul class="nav-list" id="navList">
+          <li>
+            <a href="#services">Xidmətlər</a>
+          </li>
+
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#pricing">Qiymətlər</a>
+          </li>
+
+          <li>
+            <a href="#process">Necə işləyirik?</a>
+          </li>
+
+          <!-- <li>
+            <a href="">Haqqımızda</a>
+          </li>
+
+          <li>
+            <a href="">Əlaqə</a>
+          </li> -->
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Dark mode toggle -->
+          <button
+            type="button"
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Tünd rejimi aç/bağla"
+            aria-pressed="false"
+          >
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--sun"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4.2" fill="currentColor" />
+              <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <line x1="12" y1="1.5" x2="12" y2="4" />
+                <line x1="12" y1="20" x2="12" y2="22.5" />
+                <line x1="1.5" y1="12" x2="4" y2="12" />
+                <line x1="20" y1="12" x2="22.5" y2="12" />
+                <line x1="4.2" y1="4.2" x2="5.9" y2="5.9" />
+                <line x1="18.1" y1="18.1" x2="19.8" y2="19.8" />
+                <line x1="4.2" y1="19.8" x2="5.9" y2="18.1" />
+                <line x1="18.1" y1="5.9" x2="19.8" y2="4.2" />
+              </g>
+            </svg>
+
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--moon"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                d="M20.6 15.4A8.6 8.6 0 0 1 9.6 3.4a.7.7 0 0 0-.9-.9A9.9 9.9 0 1 0 21.5 16.3a.7.7 0 0 0-.9-.9z"
+              />
+            </svg>
+          </button>
+
+          <a href="#contact" class="btn btn-primary"
+            ><i class="fa-solid fa-plus"></i><span> Layihəyə başlayın </span></a
+          >
+        </div>
+
+        <!-- Burger menu button (mobile) -->
+      </nav>
+    </header>
+
+    <!-- ==================== TOP BUTTON ==================== -->
+    <button id="topButton" class="top-button"><i class="fa-solid fa-angle-up"></i></button>
+
+    <!-- ==================== MOBILE MENU DOWN ==================== -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-list">
+        <a href="#main">
+          <span class="menu-icon">
+            <i class="fa-solid fa-house"></i>
+          </span>
+          <span>Əsas</span>
+        </a>
+
+        <a href="#services">
+          <span class="menu-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </span>
+          <span>Xidmətlər</span>
+        </a>
+
+        <!-- <a href="">
+          <span class="menu-icon">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+          <span>Başla</span>
+        </a> -->
+
+        <a href="#portfolio">
+          <span class="menu-icon">
+            <i class="fa-brands fa-audible"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+
+        <a href="">
+          <span class="menu-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+          <span>Əlaqə</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ==================== MAIN ==================== -->
+    <main id="main">
+      <!-- ==================== HERO ==================== -->
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <span class="hero__eyebrow"> VEB SAYT STUDİYASI </span>
+
+            <h2>Saytınız <span>gecə-gündüz işləyən satış meneceriniz</span> olsun</h2>
+
+            <p>
+              Restoran, salon, mağaza və ya şəxsi brend üçün sayt hazırlayırıq. Sayt işə düşəndən
+              sonra domen, hostinq və yeniləmələrlə özümüz məşğul oluruq.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn-primary"> Sayt sifariş edin </a>
+
+              <a href="#portfolio" class="btn btn-secondary"> Nümunələrə baxın </a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <!-- Website mockup / image -->
+            <img src="image/mockup.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SERVICES ==================== -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-heading__eyebrow"> XİDMƏTLƏR </span>
+
+            <h2>Xidmətlərimiz</h2>
+
+            <p>Sayt, onlayn mağaza və texniki dəstək: hamısı bir yerdə.</p>
+          </div>
+
+          <div class="services__grid">
+            <!-- Service 1 -->
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <!-- Icon -->
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+
+              <h3>Biznes saytı</h3>
+
+              <p>
+                Restoran, salon, ofis və ya şəxsi brend üçün telefonda da tez açılan, sıfırdan
+                hazırlanan sayt.
+              </p>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <!-- Icon -->
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+
+              <h3>Onlayn mağaza</h3>
+
+              <p>Məhsullarınızı internetdə satın: kataloq, səbət və onlayn ödəniş bir yerdə.</p>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <!-- Icon -->
+                <i class="fa-solid fa-headset"></i>
+              </div>
+
+              <h3>Texniki dəstək</h3>
+
+              <p>
+                Sayt həmişə açıq qalır, yenilənir və qorunur. Domen, hostinq və kiçik düzəlişlərlə
+                özümüz məşğul oluruq.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PORTFOLIO ==================== -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-heading__eyebrow"> PORTFOLIO </span>
+
+            <h2>Nümunə işlər</h2>
+
+            <p>Hər sahə üçün hazır nümunə. Bəyəndiyinizi seçin, biznesinizə uyğunlaşdıraq.</p>
+          </div>
+
+          <div class="portfolio__grid">
+            <!-- Project 1 -->
+            <article class="project-card reveal">
+              <div class="project-card__image">
+                <!-- Project image -->
+                <img src="image/restorant.webp" alt="Restoran saytı nümunəsi" />
+              </div>
+
+              <div class="project-card__content">
+                <span class="project-card__category"> Restoran </span>
+
+                <h3>Restoran saytı</h3>
+
+                <p>Menyu, masa rezervasiyası və ünvan xəritəsi.</p>
+
+                <a href="#" class="project-card__link"> Nümunəyə baxın → </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal">
+              <div class="project-card__image">
+                <!-- Project image -->
+                <img src="image/beauty.jpg" alt="Gözəllik salonu saytı nümunəsi" />
+              </div>
+
+              <div class="project-card__content">
+                <span class="project-card__category"> Gözəllik </span>
+
+                <h3>Gözəllik salonu</h3>
+
+                <p>Xidmət qiymətləri, ustaların profili və qeydiyyat sorğusu.</p>
+
+                <a href="#" class="project-card__link"> Nümunəyə baxın → </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal">
+              <div class="project-card__image">
+                <!-- Project image -->
+                <img src="image/watch.jpg" alt="Onlayn mağaza nümunəsi" />
+              </div>
+
+              <div class="project-card__content">
+                <span class="project-card__category"> Onlayn satış </span>
+
+                <h3>Instagram mağazası</h3>
+
+                <p>Məhsul kataloqu və WhatsApp ilə sifariş düyməsi.</p>
+
+                <a href="#" class="project-card__link"> Nümunəyə baxın → </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PRICING ==================== -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-heading__eyebrow"> QİYMƏTLƏR </span>
+
+            <h2>Qiymətlər</h2>
+
+            <p>Ehtiyacınıza uyğun paketi seçin. Son qiymət layihənin həcminə görə dəqiqləşir.</p>
+          </div>
+          <div class="pricing__grid">
+            <!-- 1: Başlanğıc -->
+            <article class="pricing-card reveal">
+              <div class="pricing-card__icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9-.8-.8-2.1-.8-2.9-.1z"
+                  />
+                  <path
+                    d="M12 15l-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22 22 0 0 1-4 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="pricing-card__name">Başlanğıc</h3>
+              <p class="pricing-card__desc">Kiçik biznes və şəxsi brend üçün</p>
+
+              <ul>
+                <li>1 səhifəlik sayt</li>
+                <li>Telefonda rahat açılır</li>
+                <li>Əlaqə formu və WhatsApp düyməsi</li>
+                <li>Google xəritədə ünvan</li>
+                <li>Google axtarışı üçün əsas tənzimləmə</li>
+                <li>Domen 1 il daxildir</li>
+                <li>3–5 iş günündə hazır</li>
+                <li>7 gün pulsuz düzəliş</li>
+              </ul>
+
+              <div class="pricing-card__price">
+                <span class="pricing-card__from">Qiymət</span>
+                <strong>299 <small>₼-dən</small></strong>
+              </div>
+              <a href="#contact" class="pricing-card__btn">Sifariş edin</a>
+            </article>
+
+            <!-- 2: Standart (seçilmiş) -->
+            <article class="pricing-card pricing-card--featured reveal">
+              <span class="pricing-card__badge">Tövsiyə olunur</span>
+              <div class="pricing-card__icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                  <path d="m2 17 10 5 10-5" />
+                  <path d="m2 12 10 5 10-5" />
+                </svg>
+              </div>
+              <h3 class="pricing-card__name">Standart</h3>
+              <p class="pricing-card__desc">Böyüyən biznes üçün</p>
+
+              <ul>
+                <li>5 səhifəyə qədər sayt</li>
+                <li>Məzmunu özünüz dəyişə biləcəyiniz admin panel</li>
+                <li>2 dildə sayt</li>
+                <li>Sorğu və ya rezervasiya formu</li>
+                <li>Google axtarışı üçün tənzimləmə</li>
+                <li>Domen və hostinq 1 il daxildir</li>
+                <li>7–10 iş günündə hazır</li>
+                <li>30 gün pulsuz düzəliş</li>
+              </ul>
+
+              <div class="pricing-card__price">
+                <span class="pricing-card__from">Qiymət</span>
+                <strong>699 <small>₼-dən</small></strong>
+              </div>
+              <a href="#contact" class="pricing-card__btn">Sifariş edin</a>
+            </article>
+
+            <!-- 3: Premium -->
+            <article class="pricing-card reveal">
+              <div class="pricing-card__icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m2 7 5 5 5-8 5 8 5-5-2 13H4L2 7z" />
+                </svg>
+              </div>
+              <h3 class="pricing-card__name">Premium</h3>
+              <p class="pricing-card__desc">Onlayn satış və geniş layihələr üçün</p>
+
+              <ul>
+                <li>15 səhifəyə qədər sayt</li>
+                <li>Onlayn mağaza: məhsullar, səbət, sifarişlər</li>
+                <li>Onlayn ödəniş qoşulması</li>
+                <li>3 dildə sayt</li>
+                <li>Sizə özəl dizayn</li>
+                <li>Admin panel və istifadə üzrə qısa təlim</li>
+                <li>Domen və hostinq 1 il daxildir</li>
+                <li>3–4 həftəyə hazır</li>
+                <li>90 gün prioritet dəstək</li>
+              </ul>
+
+              <div class="pricing-card__price">
+                <span class="pricing-card__from">Qiymət</span>
+                <strong>1499 <small>₼-dən</small></strong>
+              </div>
+              <a href="#contact" class="pricing-card__btn">Sifariş edin</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PROCESS ==================== -->
+      <section class="process" id="process">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-heading__eyebrow"> PROSES </span>
+
+            <h2>Necə işləyirik?</h2>
+
+            <p>İlk söhbətdən sayt işə düşənə qədər 4 addım.</p>
+          </div>
+
+          <div class="process__grid">
+            <!-- Step 1 -->
+            <article class="process-step reveal">
+              <span class="process-step__number"> 01 </span>
+
+              <h3>Layihəni müzakirə edirik</h3>
+
+              <p>Biznesinizi, məqsədinizi və istəklərinizi dinləyirik.</p>
+            </article>
+
+            <!-- Step 2 -->
+            <article class="process-step reveal">
+              <span class="process-step__number"> 02 </span>
+
+              <h3>Plan qururuq</h3>
+
+              <p>Saytın bölmələrini, imkanlarını və görünüşünü sizinlə razılaşdırırıq.</p>
+            </article>
+
+            <!-- Step 3 -->
+            <article class="process-step reveal">
+              <span class="process-step__number"> 03 </span>
+
+              <h3>Hazırlayırıq</h3>
+
+              <p>Dizaynı çəkir, saytı yazırıq. Hər mərhələdə sizə göstəririk.</p>
+            </article>
+
+            <!-- Step 4 -->
+            <article class="process-step reveal">
+              <span class="process-step__number"> 04 </span>
+
+              <h3>Təhvil veririk</h3>
+
+              <p>Saytı yayımlayır, idarəsini izah edir və dəstək verməyə davam edirik.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BENEFITS ==================== -->
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__inner">
+            <div class="benefits__content">
+              <span class="section-heading__eyebrow"> NİYƏ BİZ? </span>
+
+              <h2>Sayt hazırlamaqla işimiz bitmir.</h2>
+
+              <p>
+                Çox saytlar təhvil veriləndən sonra yarımçıq qalır: domenin vaxtı bitir, sayt
+                yavaşlayır, qiymət dəyişəndə kimə yazacağınızı bilmirsiniz. Bizdə belə olmur. Sayt
+                işə düşəndən sonra onunla biz məşğul oluruq, siz isə biznesinizlə.
+              </p>
+
+              <a href="#contact" class="btn btn-primary"> Layihənizi müzakirə edin </a>
+            </div>
+
+            <div class="benefits__list">
+              <div class="benefit-item reveal">
+                <h3>Texniki işlər bizdədir</h3>
+
+                <p>
+                  Domen, hostinq, təhlükəsizlik və yeniləmələrlə özümüz məşğul oluruq. Sayt həmişə
+                  açıq qalır.
+                </p>
+              </div>
+
+              <div class="benefit-item reveal">
+                <h3>Dəyişiklik bir mesajlıqdır</h3>
+
+                <p>Yeni qiymət, kampaniya və ya şəkil? WhatsApp-da yazın, saytda yeniləyək.</p>
+              </div>
+
+              <div class="benefit-item reveal">
+                <h3>Sayt sizə görə qurulur</h3>
+
+                <p>
+                  Hazır şablonu üstünə loqo qoyub vermirik. Biznesinizə, müştərinizə və satış
+                  üsulunuza görə hazırlayırıq.
+                </p>
+              </div>
+
+              <div class="benefit-item reveal">
+                <h3>Qiymət əvvəlcədən bəllidir</h3>
+
+                <p>
+                  İşə başlamazdan əvvəl nəyin nə qədər olduğunu yazılı razılaşırıq. Sonradan
+                  gözlənilməz əlavə xərc çıxmır.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TESTIMONIALS (Rəylər)==================== -->
+      <section class="testimonials" id="reviews">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-heading__eyebrow">RƏYLƏR</span>
+            <h2>Müştərilərimiz nə deyir?</h2>
+          </div>
+
+          <div class="testimonials__grid">
+            <div
+              class="testimonials__slider"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Müştəri rəyləri"
+            >
+              <div class="testimonials__track" id="reviewsTrack" tabindex="0">
+                <!-- TEST: bu 3 rəy yalnız görünüşü yoxlamaq üçündür, real rəy gələndə sil -->
+                <article class="testimonial-card">
+                  <blockquote class="testimonial-card__content">
+                    <p>
+                      Saytımız 5 günə hazır oldu. İlk həftədən rezervasiya zəngləri gəlməyə başladı.
+                      Menyuda qiyməti dəyişmək istəyəndə də həmin gün yenilədilər.
+                    </p>
+                  </blockquote>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar">
+                      <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%237658f5'/%3E%3Ctext x='25' y='33' font-size='22' text-anchor='middle' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E"
+                        alt="Rəşad M."
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-card__info">
+                      <strong class="testimonial-card__name">Rəşad M.</strong>
+                      <time class="testimonial-card__date" datetime="2026-08-20">20.08.2026</time>
+                      <div class="testimonial-card__stars" role="img" aria-label="5 ulduzdan 5">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <blockquote class="testimonial-card__content">
+                    <p>
+                      Instagramda satış edirdim, sifarişləri yazışmada itirirdim. İndi məhsulların
+                      kataloqu var, müştəri bəyəndiyini seçib WhatsApp-da yazır. Çox rahat oldu.
+                    </p>
+                  </blockquote>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar">
+                      <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%230f9d8a'/%3E%3Ctext x='25' y='33' font-size='22' text-anchor='middle' fill='white' font-family='Arial'%3EN%3C/text%3E%3C/svg%3E"
+                        alt="Nərmin H."
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-card__info">
+                      <strong class="testimonial-card__name">Nərmin H.</strong>
+                      <time class="testimonial-card__date" datetime="2026-09-03">03.09.2026</time>
+                      <div class="testimonial-card__stars" role="img" aria-label="5 ulduzdan 5">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <blockquote class="testimonial-card__content">
+                    <p>
+                      Salonumuz üçün sadə sayt istəyirdim. Nə lazım olduğunu özüm də dəqiq
+                      bilmirdim, birlikdə qərar verdik. Bir az gecikmə oldu, amma nəticədən razıyam.
+                    </p>
+                  </blockquote>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar">
+                      <img
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%23e0783c'/%3E%3Ctext x='25' y='33' font-size='22' text-anchor='middle' fill='white' font-family='Arial'%3ET%3C/text%3E%3C/svg%3E"
+                        alt="Türkan A."
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="testimonial-card__info">
+                      <strong class="testimonial-card__name">Türkan A.</strong>
+                      <time class="testimonial-card__date" datetime="2026-09-15">15.09.2026</time>
+                      <div class="testimonial-card__stars" role="img" aria-label="5 ulduzdan 4">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT ==================== -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__content">
+            <span class="section-heading__eyebrow"> ƏLAQƏ </span>
+
+            <h2>Sayt lazımdır? Yazın, 24 saat ərzində cavab verək.</h2>
+
+            <p>
+              Biznesiniz haqqında bir neçə cümlə yazmaq kifayətdir. Qalanını birlikdə
+              dəqiqləşdirərik.
+            </p>
+
+            <div class="hero__actions" style="justify-content: center">
+              <a
+                href="https://wa.me/994500000000?text=Salam%2C%20sayt%20sifari%C5%9F%20etm%C9%99k%20ist%C9%99yir%C9%99m"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+              >
+                WhatsApp-da yazın
+              </a>
+
+              <a href="mailto:info@esayt.az" class="btn btn-secondary"> E-poçt göndərin </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <a href="#" class="logo"> <i class="fa-solid fa-circle-nodes"></i> esayt.az </a>
+
+          <p>© 2026 esayt.az. Bütün hüquqlar qorunur.</p>
+
+          <div class="site-footer__links">
+            <a href="https://instagram.com/esayt.az" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://tiktok.com/@esayt.az" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://wa.me/994500000000" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/loadPage.js"></script>
+    <script src="js/topButton.js"></script>
+    <script src="js/testimonials_slider.js"></script>
+  </body>
+</html>
